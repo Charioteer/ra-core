@@ -3,12 +3,12 @@ import { TranslationContextProps } from './TranslationContext';
 interface MappedProps {
     locale: string;
     messages: object;
-    options?: object;
 }
 interface State {
     contextValues: TranslationContextProps;
 }
 interface Props {
+    options?: object;
     children: ReactElement<any>;
 }
 interface ViewProps extends MappedProps, Props {
